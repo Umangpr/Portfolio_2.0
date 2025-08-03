@@ -4,13 +4,15 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/Portfolio_2.0", // 👈 IMPORTANT for GitHub Pages
+
   server: {
     host: "::",
     port: 8080,
   },
-  plugins: [
-    react(),
-  ],
+
+  plugins: [react()],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
