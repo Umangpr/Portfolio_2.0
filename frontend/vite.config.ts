@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/Portfolio_2.0", // 👈 IMPORTANT for GitHub Pages
+  base: "/Portfolio_2.0/", //  IMPORTANT for GitHub Pages
 
   server: {
     host: "::",
