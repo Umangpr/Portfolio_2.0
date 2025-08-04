@@ -22,6 +22,7 @@ It is built from scratch using modern web technologies and deployed via **GitHub
 ## 📸 Preview
 
 <!-- Add screenshot or preview image here -->
+![Website Preview](./frontend/public/preview.png)
 
 ---
 ## ✨ Features
