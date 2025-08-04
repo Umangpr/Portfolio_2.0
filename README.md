@@ -149,4 +149,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
+<<<<<<< HEAD
 Made with ❤️ by Umangpr
+=======
+Made with ❤️ by Umangpr
+>>>>>>> a1b2b9d7c70398982c59f1b6dca877962d3b3261
