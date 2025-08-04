@@ -33,8 +33,8 @@ const ProjectsSection = () => {
       icon: <User className="h-8 w-8" />,
       technologies: ["React.js", "Tailwind CSS", "TypeScript", "Vite"],
       features: ["Responsive Design", "Smooth Animations", "Dark Theme", "SEO Optimized"],
-      liveUrl: "https://umangprakash.dev",
-      githubUrl: "https://github.com/umangprakash/portfolio",
+      liveUrl: "https://umangpr.github.io/Portfolio_2.0",
+      githubUrl: "https://github.com/Umangpr/Portfolio_2.0",
       status: "Live",
       color: "text-primary"
     }
