@@ -255,7 +255,7 @@ const ContactSection = () => {
             <Card className="card-gradient border-border">
               <CardContent className="p-6">
                 <p className="text-muted-foreground">
-                  © 2024 Umang Prakash. Built with passion using React, TypeScript, and Tailwind CSS.
+                  © 2025 Umang Prakash. Built with ❤️ & passion using React, TypeScript, and Tailwind CSS.
                 </p>
               </CardContent>
             </Card>

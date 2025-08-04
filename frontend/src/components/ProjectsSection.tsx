@@ -1,14 +1,54 @@
-import { ExternalLink, Github, Code, BookOpen, User, Monitor } from 'lucide-react';
+import { ExternalLink, Github, Code,  } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
+import skillboostImage from '@/assets/skillboostImage.png';
+import blogImage from '@/assets/blogImage.png';
+import portfolioImage from '@/assets/portfolioImage.png';
+import prakashElectricImage from '@/assets/prakashElectricImage.png';
+import razorpayCloneImage from '@/assets/razorpayCloneImage.png';
+
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Prakash Electric",
+      description: "A professional electrical services website featuring service listings, contact information, and business showcase with modern design and responsive layout.",
+      image: prakashElectricImage,
+      technologies: ["React.js", "Tailwind CSS","Node", "TypeScript", "Vite"],
+      features: ["Service Portfolio", "Contact Forms", "Responsive Design", "Business Info"],
+      liveUrl: "https://prakash-electric.vercel.app/",
+      githubUrl: "https://github.com/Umangpr/PrakashElectric",
+      status: "Development",
+      color: "text-accent"
+    },
+    {
+      title: "Razorpay Clone",
+      description: "A pixel-perfect clone of Razorpay's landing page showcasing modern web development skills with responsive design and interactive elements.",
+      image: razorpayCloneImage,
+      technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+      features: ["Responsive Layout", "Interactive UI", "Modern Design", "Cross-browser Support"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/Umangpr/razorpay-clone",
+      status: "Development",
+      color: "text-primary"
+    }
+    ,
+    {
+      title: "Personal Portfolio Website",
+      description: "A modern, responsive portfolio website showcasing projects, skills, and experience with smooth animations and dark theme design.",
+      image: portfolioImage,
+      technologies: ["React.js", "Tailwind CSS", "TypeScript", "Vite"],
+      features: ["Responsive Design", "Smooth Animations", "Dark Theme", "SEO Optimized"],
+      liveUrl: "https://umangpr.github.io/Portfolio_2.0",
+      githubUrl: "https://github.com/Umangpr/Portfolio_2.0",
+      status: "Live",
+      color: "text-primary"
+    },
+    {
       title: "SkillBoost - MERN Ed-Tech Platform",
       description: "A comprehensive educational technology platform built with MERN stack featuring course management, progress tracking, and interactive learning modules.",
-      icon: <Monitor className="h-8 w-8" />,
+      image: skillboostImage,
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       features: ["User Authentication", "Course Management", "Progress Tracking", "Payment Integration"],
       liveUrl: "https://skill-boost-umber.vercel.app/",
@@ -19,7 +59,7 @@ const ProjectsSection = () => {
     {
       title: "React Blogging App",
       description: "A feature-rich blogging platform with user authentication, content management, and responsive design using React and Appwrite backend services.",
-      icon: <BookOpen className="h-8 w-8" />,
+      image: blogImage,
       technologies: ["React.js", "Appwrite", "Tailwind CSS", "JavaScript"],
       features: ["User Authentication", "CRUD Operations", "Rich Text Editor", "Image Upload"],
       liveUrl: "https://mega-blog-pearl.vercel.app/",
@@ -27,17 +67,8 @@ const ProjectsSection = () => {
       status: "Live",
       color: "text-accent"
     },
-    {
-      title: "Personal Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing projects, skills, and experience with smooth animations and dark theme design.",
-      icon: <User className="h-8 w-8" />,
-      technologies: ["React.js", "Tailwind CSS", "TypeScript", "Vite"],
-      features: ["Responsive Design", "Smooth Animations", "Dark Theme", "SEO Optimized"],
-      liveUrl: "https://umangpr.github.io/Portfolio_2.0",
-      githubUrl: "https://github.com/Umangpr/Portfolio_2.0",
-      status: "Live",
-      color: "text-primary"
-    }
+    
+    
   ];
 
   const certifications = [
@@ -68,9 +99,9 @@ const ProjectsSection = () => {
                 <CardContent className="p-8 h-full flex flex-col">
                   {/* Project Header */}
                   <div className="flex items-start justify-between mb-6">
-                    <div className={`w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.color} group-hover:scale-110 transition-transform duration-300`}>
+                    {/* <div className={`w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.color} group-hover:scale-110 transition-transform duration-300`}>
                       {project.icon}
-                    </div>
+                    </div> */}
                     <Badge 
                       variant="secondary" 
                       className={`${project.status === 'Live' ? 'bg-green-500/20 text-green-400' : 'bg-yellow-500/20 text-yellow-400'}`}
@@ -78,6 +109,17 @@ const ProjectsSection = () => {
                       {project.status}
                     </Badge>
                   </div>
+
+                  {/* Project Image */}
+                  <div className="mb-6 overflow-hidden rounded-lg">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+
+
 
                   {/* Project Title */}
                   <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-colors duration-300">
