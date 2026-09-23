@@ -43,7 +43,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            
+
             {/* Left Side - Main Content */}
             <div className="space-y-8 fade-in-up">
               {/* Status Badge */}
@@ -68,7 +68,7 @@ const HeroSection = () => {
                     Umang Prakash
                   </span>
                 </h1>
-                
+
                 <div className="space-y-2">
                   <p className="text-2xl md:text-3xl font-semibold text-foreground">
                     Software Engineer &
@@ -81,9 +81,9 @@ const HeroSection = () => {
 
               {/* Description */}
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                I craft digital experiences that solve real-world problems with 
-                <span className="text-accent font-semibold"> creativity</span> and 
-                <span className="text-primary font-semibold"> consistency</span>. 
+                I craft digital experiences that solve real-world problems with
+                <span className="text-accent font-semibold"> creativity</span> and
+                <span className="text-primary font-semibold"> consistency</span>.
                 Passionate about building impactful web solutions.
               </p>
 
@@ -112,17 +112,21 @@ const HeroSection = () => {
                   Explore My Work
                   <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
                 </Button>
-                
+
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
-                  className=" border-2 border-accent/30 bg-background/50 backdrop-blur-sm hover:bg-accent/10 hover:border-accent/50 px-8 py-6 text-lg font-semibold group transition-all duration-300"
+                  className="border-2 border-accent/30 bg-background/50 backdrop-blur-sm hover:bg-accent/10 hover:border-accent/50 px-8 py-6 text-lg font-semibold group transition-all duration-300"
                 >
-                  <a href="/Resume.pdf" className='flex justify-center items-center' download>
-    <Download className="mr-2 h-5 w-5 group-hover:-translate-y-1 transition-transform" />
-    Download CV
-  </a>
-                  
+                  <a
+                    href={`${import.meta.env.BASE_URL}Umang_Prakash_Resume.pdf`}
+                    download
+                    className="flex justify-center items-center"
+                  >
+                    <Download className="mr-2 h-5 w-5 group-hover:-translate-y-1 transition-transform" />
+                    Download CV
+                  </a>
                 </Button>
               </div>
 
