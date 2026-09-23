@@ -118,7 +118,7 @@ const HeroSection = () => {
                   size="lg"
                   className=" border-2 border-accent/30 bg-background/50 backdrop-blur-sm hover:bg-accent/10 hover:border-accent/50 px-8 py-6 text-lg font-semibold group transition-all duration-300"
                 >
-                  <a href="/Umang_Prakash_Resume.pdf" className='flex justify-center items-center' download>
+                  <a href="/Resume.pdf" className='flex justify-center items-center' download>
     <Download className="mr-2 h-5 w-5 group-hover:-translate-y-1 transition-transform" />
     Download CV
   </a>
